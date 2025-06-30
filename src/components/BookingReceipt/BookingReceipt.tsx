@@ -29,7 +29,7 @@ export const BookingReceipt: React.FC<BookingReceiptProps> = ({
 
   const handleGeneratePDF = async () => {
     if (receiptRef.current) {
-      await generatePDF(receiptRef.current, data);
+      await generatePDF(receiptRef.current);
     }
   };
 
