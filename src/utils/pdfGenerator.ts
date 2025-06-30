@@ -1,6 +1,6 @@
-import type { BookingData } from "../types/booking"
 
-export const generatePDF = async (element: HTMLElement, data: BookingData): Promise<void> => {
+
+export const generatePDF = async (element: HTMLElement): Promise<void> => {
   try {
     // Dynamic import to avoid bundling issues
     const html2canvas = (await import("html2canvas")).default
